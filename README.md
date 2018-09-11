@@ -1,33 +1,19 @@
-# ez-api-urf-net
-Easy code generation based on a database schema given by [EZDbSchema](https://github.com/rvegajr/ez-db-schema-core).  The template language this application uses is HandleBars. 
+# EzApiUrfNet - Easy API URF .NEt
+
+The goal of this project is to use a variety of open source projects to point to a database and easily create an API.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. This nuget package will dump the published cli package for code generation and a powershell script to run it.  The nuget package will dump everything you need for code generation into the project you have selected under the EzDbCodeGen folder.    
-
-Please note I owe you so much more documenation on this!! more to come! :)
-
 ### Prerequisites
-* [DotNetCore] (https://www.microsoft.com/net/learn/get-started) - You will get everything you need except the sdk!  please download the latest version of this before trying to run the powershell script
-* [Visual Studio 2017] (https://visualstudio.microsoft.com/) - You will get everything you need except the sdk!  please download the latest version of this before trying to run the powershell script
-* You will need MSSQL with some database installed.  If you need a sample database,  feel free to look for the [World Wide Importers](https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0) samples.
+You will need MSSQL with some database installed.  If you need a sample database,  feel free to look for the [World Wide Importers](https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0) samples.
 
 ### Using this project:
 
-Lets go through a test run of how to use this before we get into the nitty gritty:
-####  From NuGet (or use the nuget package manager)
-1. Install-Package EzDbCodeGen  - it will create a folder in EzDbCodeGen.NuGet.TestTarget called EzDbCodeGen
-2. Update the connection string in ezdbcodegen.ps1 with the database you wish to create your templates on
-3. right click on ezdbcodegen.ps1 and select "Open with PowerShell ISE" (because for whatever reason,  the direct executer just hangs for me)
-4. Click the green right arrow to run the script.  You should see a powershell window come up with the script running,  EzDbCodeGen/Generated should have the results of both of the templates execution
+####  From NuGet
 
 ## Deployment
 
 This project was design to be hosted and distributed with nuget.com.
-
-## Built With
-
-* [.net core](https://www.microsoft.com/net/learn/get-started) - The framework used
 
 ## Contributing
 
@@ -48,7 +34,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 Many thanks to the following projects that have helped in this project
-* EzDBSchema 
-* McMaster.Extensions.CommandLineUtils
+* Unit of Work & Repositories Framework - [URF](https://github.com/urfnet/URF.NET)
+* TrackableEntities - [TrackableEntities](https://github.com/TrackableEntities)
+* Swashbuckle - [Swashbuckle.OData](https://github.com/andyward/Swashbuckle.OData)
+* EzDbCodeGen - [ez-db-codegen-core](https://github.com/rvegajr/ez-db-codegen-core)
 
+## Known Issues
 
+Swashbuckle.OData has not been updatd for ASP.NET 7.  I included a compiled version from https://github.com/andyward/Swashbuckle.OData which fixed the issues that were preventing it from rendering swagger.
