@@ -1,18 +1,6 @@
 #tool nuget:?package=vswhere
 #addin "Cake.WebDeploy"
 
-/*
-Example Usage
-1. The following will generate a STAGE deployment (the default will be STAGE)
-.\build.ps1 -ScriptArgs '-envversion="STAGE"'
-
-
-2. The following will generate a LIVE deployment 
-.\build.ps1 -ScriptArgs '-envversion="LIVE"'
-
-3. the following will generate a LIVE deployment tagged to a version of 1.5.0.5
-.\build.ps1 -ScriptArgs '-envversion="LIVE-1.5.0.5"'
-*/
 
 DirectoryPath vsLatest  = VSWhereLatest();
 FilePath msBuildPathX64 = (vsLatest==null)
@@ -31,14 +19,14 @@ if (envVersion!="??") {
 }
 var configuration = Argument("configuration", "Debug");
 var thisDir = System.IO.Path.GetFullPath(".") + System.IO.Path.DirectorySeparatorChar;
-var binDir = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.Web/bin/"));
-var webPackageDir = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.Web/obj/Debug/Package/MARSApi.Web.zip"));
-var projectFile = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.Web/MARSApi.Web.csproj"));
-var solutionFile = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.sln"));
-var buildDir = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.Web/bin/") + Directory(configuration));
-var publishDir = System.IO.Path.GetFullPath(Directory("./Src/MARSApi.Web/obj/Debug/Package/PackageTmp/")) + System.IO.Path.DirectorySeparatorChar;
+var binDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/bin/"));
+var webPackageDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/obj/Debug/Package/EzApi.Web.zip"));
+var projectFile = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/EzApi.Web.csproj"));
+var solutionFile = System.IO.Path.GetFullPath(Directory("./Src/EzApi.sln"));
+var buildDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/bin/") + Directory(configuration));
+var publishDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/obj/Debug/Package/PackageTmp/")) + System.IO.Path.DirectorySeparatorChar;
 var tempPath = System.IO.Path.GetTempPath();
-var deployPath = (env=="STAGE" ? @"\\Sim-svr05\c$\inetpub\wwwroot\marsapi\" : @"\\Sim-svr07\c$\inetpub\wwwroot\marsapi\");
+var deployPath = (env=="STAGE" ? @"\\Sim-svr05\c$\inetpub\wwwroot\Ezapi\" : @"\\Sim-svr07\c$\inetpub\wwwroot\Ezapi\");
 public int MAJOR = 0; public int MINOR = 1; public int REVISION = 2; public int BUILD = 3; //Version Segments
 
 Information(string.Format("target={0}", target));
@@ -82,7 +70,7 @@ Task("UpdateVersionFiles")
   .IsDependentOn("RestoreNuGetPackages")
   .Does(() =>
 {
-	var WebApiAssemblyFileName = thisDir + @"Src\MARSApi.Web\Properties\AssemblyInfo.cs";
+	var WebApiAssemblyFileName = thisDir + @"Src\EzApi.Web\Properties\AssemblyInfo.cs";
 	var potentialVersion = GetVersionInAssembly("AssemblyVersion", WebApiAssemblyFileName);
 	if (version!="??") {
 		potentialVersion = version;
