@@ -232,7 +232,7 @@ namespace Ez.Common
             {
                 if (instance == null)
                 {
-                    ConfigFileName = "{ASSEMBLY_PATH}appsettings.json".ResolvePathVars();
+                    ConfigFileName = "{ASSEMBLY_PATH}hostappsettings.json".ResolvePathVars();
                     try
                     {
                         if (File.Exists(ConfigFileName))

@@ -39,8 +39,8 @@ namespace Ez.Web
         /// change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
         public static void RegisterTypes(IUnityContainer container)
         {
-            //$$ UnityConfigRegistrationsGenerated.RegisterTypes(container);
-            //$$ UnityConfigServiceRegistrationsGenerated.RegisterTypes(container);
+            UnityConfigRegistrationsGenerated.RegisterTypes(container);
+            UnityConfigServiceRegistrationsGenerated.RegisterTypes(container);
             UnityConfigRegistrations.RegisterSingleton(container);
             UnityConfigRegistrations.RegisterTypes(container);
             UnityConfigRegistrations.RegisterTransient(container);

@@ -50,8 +50,8 @@ namespace Ez.Web
             //var myAssemblies = AppDomain.CurrentDomain.GetAssemblies().Where(a => a.FullName.StartsWith("SelfHostWebApiOwin")).ToArray();
 
             container.RegisterType(typeof(Startup));
-            //$$ UnityConfigRegistrationsGenerated.RegisterTypesOwin(container);
-            //$$ UnityConfigServiceRegistrationsGenerated.RegisterTypesOwin(container);
+            UnityConfigRegistrationsGenerated.RegisterTypesOwin(container);
+            UnityConfigServiceRegistrationsGenerated.RegisterTypesOwin(container);
             UnityConfigRegistrations.RegisterTypesOwin(container);
             UnityConfigRegistrations.RegisterSingleton(container);
             /*

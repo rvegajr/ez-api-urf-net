@@ -1,0 +1,21 @@
+﻿{
+    "DefaultSettings": {
+        "Settings": {
+            "ConnectionString": "data source=127.0.0.1;initial catalog=Ez;user=Ez_usr;password=Ez"
+        }
+    },
+    "Environments": {
+        "LOCAL": {
+            "Host": [ "localhost*", "localhost.url" ],
+            "Settings": {
+                "ConnectionString": "data source=127.0.0.1;initial catalog=Ez;user=Ez_usr;password=Ez"
+            }
+        },
+        "PROD": {
+            "Host": [ "PROD_HOST_NAME", "Ezapi.prod.url" ],
+            "Settings": {
+                "ConnectionString": "data source=SIM-SVR07\\SIMGP;initial catalog=Ez;user=Ez_usr;password=Ez"
+            }
+        }
+    }
+}

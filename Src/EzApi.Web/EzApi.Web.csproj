@@ -345,6 +345,8 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityConfigRegistrations.cs" />
+    <Compile Include="App_Start\UnityConfigRegistrationsGenerated.cs" />
+    <Compile Include="App_Start\UnityConfigServiceRegistrationsGenerated.cs" />
     <Compile Include="App_Start\UnityDependencyResolver.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="App_Start\UnityOwinHelpers.cs" />
@@ -460,8 +462,6 @@
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="EzDbCodeGen\Templates\SchemaRenderAsFiles.hbs" />
-    <Content Include="EzDbCodeGen\Templates\SchemaRender.hbs" />
     <Content Include="EzDbCodeGen\bin\publish\EzDbCodeGen.Cli.deps.json" />
     <Content Include="EzDbCodeGen\bin\publish\EzDbCodeGen.Cli.runtimeconfig.json" />
     <Content Include="EzDbCodeGen\bin\publish\ezdbcodegen.config.json" />

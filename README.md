@@ -1,4 +1,4 @@
-# EzApiUrfNet - Easy API URF .NEt
+# EzApiUrfNet - Easy API URF .NET
 
 The goal of this project is to use a variety of open source projects to point to a database and easily create an API.
 

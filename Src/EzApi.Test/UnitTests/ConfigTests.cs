@@ -29,7 +29,6 @@ namespace UnitTests
             Config.Environments.Add(DevSettings.Environment, DevSettings);
             var ProdSettings = new EnvironmentSettings();
             ProdSettings.Environment = "Prod";
-            ProdSettings.Host.Add("SIM-SVR03");
             ProdSettings.Host.Add("Ezprod.com");
             ProdSettings.Settings.Add("Key1", "PRODValue1");
             ProdSettings.Settings.Add("Key2", 902);
