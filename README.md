@@ -14,11 +14,11 @@ You will need MSSQL with some database installed.  If you need a sample database
 1. in the command prompt or windows explorer line,  type C:\>`powershell` and hit enter
 2. Navigating to the path that you want to download the code to,  type:  C:\>`git clone https://github.com/rvegajr/ez-api-urf-net` 
 3. Open {gitroot}\ez-api-urf-net\Src\EzApi.sln
-4. Using Solution Explorer, Navigate to {Solution Root}\EzApi.Web\EzDbCodeGen\ezdbcodegen.ps1 and click on it to open for edit
-5. Right click on this ezdbcodegen.ps1 and select `Open with Powershell ISE`
-6. On Line 3: change the connection string `$ConnectionString = 'Server=localhost;Database=WideWorldImportersDW;user id=sa;password=sa'` to your valid SQL connection 
-7. Press the ISE Green Arrow (or press F5) to execute the script (it will ask if you are sure because it will ask the reload,  press 'y' + enter)
-8. If all is good, allow the solution to reload.  Run the application.
+4. Using Solution Explorer, Navigate to {Solution Root}\EzApi.Web and make sure it is selected as the "Startup Project"
+4. Using Solution Explorer, Navigate to {Solution Root}\EzApi.Web\EzDbCodeGen\ezdbcodegen.ps1, right click on this and select `Open with Powershell ISE`
+5. On Line 3: change the connection string `$ConnectionString = 'Server=localhost;Database=WideWorldImportersDW;user id=sa;password=sa'` to your valid SQL connection 
+6. Press the ISE Green Arrow (or press F5) to execute the script (it will ask if you are sure because it will ask the reload,  press 'y' + enter)
+7. If all is good, allow the solution to reload.  Run the application.
 
 ## Deployment
 
