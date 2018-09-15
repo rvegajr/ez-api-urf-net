@@ -12,7 +12,7 @@ You will need MSSQL with some database installed.  If you need a sample database
 
 ####  From NuGet
 1. in the command prompt or windows explorer line,  type C:\>`powershell` and hit enter
-2. Navigating to the path that you want to download the code i,  type:  C:\>`git clone https://github.com/rvegajr/ez-api-urf-net` 
+2. Navigating to the path that you want to download the code to,  type:  C:\>`git clone https://github.com/rvegajr/ez-api-urf-net` 
 3. Open {gitroot}\ez-api-urf-net\Src\EzApi.sln
 4. Using Solution Explorer, Navigate to {Solution Root}\EzApi.Web\EzDbCodeGen\ezdbcodegen.ps1 and click on it to open for edit
 5. Right click on this ezdbcodegen.ps1 and select `Open with Powershell ISE`
