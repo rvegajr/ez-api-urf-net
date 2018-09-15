@@ -8,6 +8,8 @@ schemas that change rapidly.  This application will use powershell and EzDbSchem
 ### Prerequisites
 You will need MSSQL with some database installed.  If you need a sample database,  feel free to look for the [World Wide Importers](https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0) samples.
 
+This application was created using VS2017.   These instructions are assuming that you are using VS2017 to perform these steps.  Yes, there is future plans to bring this to ASP.NET core soon. :)
+
 ### Using this project:
 
 ####  From NuGet
