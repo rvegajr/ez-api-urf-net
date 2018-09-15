@@ -459,7 +459,7 @@
     <Content Include="EzDbCodeGen\Templates\URFServiceTemplate.hbs" />
     <Content Include="EzDbCodeGen\Templates\WebApiControllersTemplate.hbs" />
     <Content Include="EzDbCodeGen\ezdbcodegen.ps1" />
-    <Content Include="appsettings.json">
+    <Content Include="hostappsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="EzDbCodeGen\bin\publish\EzDbCodeGen.Cli.deps.json" />
