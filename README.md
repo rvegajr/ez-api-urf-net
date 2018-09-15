@@ -42,3 +42,4 @@ Many thanks to the following projects that have helped in this project
 ## Known Issues
 
 Swashbuckle.OData has not been updatd for ASP.NET 7.  I included a compiled version from https://github.com/andyward/Swashbuckle.OData which fixed the issues that were preventing it from rendering swagger.
+The DLL was compiled and included in repo under "ez-api-urf-net\tools\Swashbuckle.OData"
