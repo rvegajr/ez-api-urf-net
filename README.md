@@ -10,6 +10,8 @@ You will need MSSQL with some database installed.  If you need a sample database
 
 This application was created using VS2017.   These instructions are assuming that you are using VS2017 to perform these steps.  Yes, there is future plans to bring this to ASP.NET core soon. :)
 
+Note that work is currently being done on CakeBuild to allow for easy deployent to target folders (hence the cake build files in the repo).  Consider this feature incomplete for now,  but I am almost there.  
+
 ### Using this project:
 
 ####  From NuGet
@@ -60,6 +62,7 @@ Many thanks to the following projects that have helped in this project.  This pr
 * NLog - [NLog](https://nlog-project.org/)
 * Pluralize - [Pluralize.NET](https://github.com/sarathkcm/Pluralize.NET)
 * WebActivator - [WebActivator](https://github.com/davidebbo/WebActivator)
+* CakeBuild - [Cakebuild.NET](https://cakebuild.net/)
 
 ## Known Issues
 
