@@ -1,6 +1,7 @@
 # EzApiUrfNet - Easy API URF .NET
 
-The goal of this project is to use a variety of open source projects to point to a database and easily create an API.
+The goal of this project is to use a variety of open source projects to point to a database and easily create an API.  The application's purpose is to deal with 
+schemas that change rapidly.  This application will use powershell and EzDbSchema/EzDbCodeGen to read a database schema and generate all the entity specific classes (model, controller, services, etc).  The api will be served up using a Swagger for easy querying.  Route Tests will also be generated to allow the user to test if schema changes should work as expected.
 
 ## Getting Started
 
@@ -10,6 +11,14 @@ You will need MSSQL with some database installed.  If you need a sample database
 ### Using this project:
 
 ####  From NuGet
+1. in the command prompt or windows explorer line,  type C:\>`powershell` and hit enter
+2. Navigating to the path that you want to download the code i,  type:  C:\>`git clone https://github.com/rvegajr/ez-api-urf-net` 
+3. Open {gitroot}\ez-api-urf-net\Src\EzApi.sln
+4. Using Solution Explorer, Navigate to {Solution Root}\EzApi.Web\EzDbCodeGen\ezdbcodegen.ps1 and click on it to open for edit
+5. Right click on this ezdbcodegen.ps1 and select `Open with Powershell ISE`
+6. On Line 3: change the connection string `$ConnectionString = 'Server=localhost;Database=WideWorldImportersDW;user id=sa;password=sa'` to your valid SQL connection 
+7. Press the ISE Green Arrow (or press F5) to execute the script (it will ask if you are sure because it will ask the reload,  press 'y' + enter)
+8. If all is good, allow the solution to reload.  Run the application.
 
 ## Deployment
 
