@@ -33,11 +33,22 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Many thanks to the following projects that have helped in this project
+Many thanks to the following projects that have helped in this project.  This project is indebted to the hours upon hours or work that these projects have in them:
 * Unit of Work & Repositories Framework - [URF](https://github.com/urfnet/URF.NET)
 * TrackableEntities - [TrackableEntities](https://github.com/TrackableEntities)
-* Swashbuckle - [Swashbuckle.OData](https://github.com/andyward/Swashbuckle.OData)
+* Swashbuckle - [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle)
+* Swashbuckle.OData - [Swashbuckle.OData](https://github.com/andyward/Swashbuckle.OData)
+* EzDbSchema - [ez-db-codegen-core](https://github.com/rvegajr/ez-db-schema)
 * EzDbCodeGen - [ez-db-codegen-core](https://github.com/rvegajr/ez-db-codegen-core)
+* Fody - [Fody](https://github.com/Fody/Fody)
+* Fody.NullGuard - [NullGuard](https://github.com/Fody/NullGuard)
+* Handlebars - [Handlebars.Net](https://github.com/rexm/Handlebars.Net)
+* jquery - [jquery](http://jquery.com/)
+* Json.Comparer - [Json.Comparer](https://github.com/rvegajr/Json.Comparer)
+* Modernizr - [Modernizr](https://modernizr.com/)
+* NLog - [NLog](https://nlog-project.org/)
+* Pluralize - [Pluralize.NET](https://github.com/sarathkcm/Pluralize.NET)
+* WebActivator - [WebActivator](https://github.com/davidebbo/WebActivator)
 
 ## Known Issues
 
