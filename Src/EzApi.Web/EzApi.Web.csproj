@@ -56,8 +56,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="EzDbCodeGen.Core, Version=1.1.17.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EzDbCodeGen.1.1.17\lib\net461\EzDbCodeGen.Core.dll</HintPath>
+    <Reference Include="EzDbCodeGen.Core, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EzDbCodeGen.1.1.18\lib\net461\EzDbCodeGen.Core.dll</HintPath>
     </Reference>
     <Reference Include="EzDbSchema.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EzDbSchema.1.0.23\lib\net461\EzDbSchema.Core.dll</HintPath>
@@ -468,12 +468,6 @@
     <Content Include="EzDbCodeGen\bin\publish\Templates\SchemaRender.hbs" />
     <Content Include="EzDbCodeGen\bin\publish\Templates\SchemaRenderAsFiles.hbs" />
     <Content Include="EzDbCodeGen\bin\publish\Templates\SchemaRenderAsFilesNoOutput.hbs" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFilesNoOutput.hbs" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFiles.hbs" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRender.hbs" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\ezdbcodegen.config.json" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.runtimeconfig.json" />
-    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.deps.json" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
@@ -503,8 +497,16 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="EzDbCodeGen\Templates\Ef6ContextTemplateAnnotations.hbs" />
+    <Content Include="EzDbCodeGen\Templates\Ef6ModelsTemplateAnnotations.hbs" />
     <Content Include="EzDbCodeGen\Templates\SchemaRenderAsFiles.hbs" />
     <Content Include="EzDbCodeGen\Templates\SchemaRender.hbs" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFilesNoOutput.hbs" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFiles.hbs" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRender.hbs" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\ezdbcodegen.config.json" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.runtimeconfig.json" />
+    <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.deps.json" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

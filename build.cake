@@ -7,12 +7,12 @@ FilePath msBuildPathX64 = (vsLatest==null)
                             ? null
                             : vsLatest.CombineWithFilePath("./MSBuild/15.0/Bin/amd64/MSBuild.exe");
 var target = Argument("target", "Finish");
-var env = Argument("env", "STAGE");
+var env = Argument("env", "DEV");
 var version = Argument("version", "1.0.1.0003");
 //var version = Argument("version", "??");
 var envVersion = Argument("envversion", "??");
 //ScripArgs Does not support multiple arguments,  so you can pass env and version with a hyphen
-if (envVersion!="??") {
+if (envVersion!="??") {	
 	var envVersionParse = envVersion.Split('-');
 	env = envVersionParse[0];
 	if (envVersionParse.Length>1) version = envVersionParse[1];	
@@ -26,7 +26,7 @@ var solutionFile = System.IO.Path.GetFullPath(Directory("./Src/EzApi.sln"));
 var buildDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/bin/") + Directory(configuration));
 var publishDir = System.IO.Path.GetFullPath(Directory("./Src/EzApi.Web/obj/Debug/Package/PackageTmp/")) + System.IO.Path.DirectorySeparatorChar;
 var tempPath = System.IO.Path.GetTempPath();
-var deployPath = (env=="STAGE" ? @"\\Sim-svr05\c$\inetpub\wwwroot\Ezapi\" : @"\\Sim-svr07\c$\inetpub\wwwroot\Ezapi\");
+var deployPath = (env=="DEV" ? @"\\DEVSERVER\c$\inetpub\wwwroot\Ezapi\" : @"\\PRODSERVER\c$\inetpub\wwwroot\Ezapi\");
 public int MAJOR = 0; public int MINOR = 1; public int REVISION = 2; public int BUILD = 3; //Version Segments
 
 Information(string.Format("target={0}", target));
@@ -40,8 +40,8 @@ Information(string.Format("buildDir={0},  Exists?={1}", buildDir, System.IO.Dire
 Information(string.Format("projectFile={0},  Exists?={1}", projectFile, System.IO.File.Exists(projectFile)));
 Information(string.Format("solutionFile={0},  Exists?={1}", solutionFile, System.IO.File.Exists(solutionFile)));
 Information(string.Format("tempPath={0},  tempPath?={1}", tempPath, System.IO.Directory.Exists(tempPath)));
-if (!((env=="STAGE") || (env=="LIVE"))) 
-	throw new Exception(String.Format("Ennvironment was incorrectly set,  it can only be STAGE or LIVE... it was {0}", env));   
+if (!((env=="DEV") || (env=="LIVE"))) 
+	throw new Exception(String.Format("Ennvironment was incorrectly set,  it can only be DEV or LIVE... it was {0}", env));   
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
