@@ -10,10 +10,11 @@
         "{SCHEMANAME}{OBJECTNAME-U}" = "CUSTOMERTBL_ADDRESS"
         "{SCHEMANAME-L}{OBJECTNAME-L|X'tbl_'}" = "customeraddress"
         "{SCHEMANAME-P}{OBJECTNAME-P|X'tbl_'}" ="CustomerAddress"
+        Alias
         */
-        "PropertyNameSuffix": "Value", //If a proerty has the same name as its parent Entity,  this is the suffix that will be appended to the Alias name
+        "PropertyObjectNameCollisionSuffix": "Value", //If a proerty has the same name as its parent Entity,  this is the suffix that will be appended to the Alias name
         "AliasNamePattern": "{SCHEMANAME-P|X'dbo'}{OBJECTNAME-S|X' '|X'tbl_'}", /* Default value is {OBJECTNAME} if blank or not present*/
-        "SchemaName": "EzApi"
+        "SchemaName": "WWIEntities"
     },
     /* Entities higher up will be utilized for ignore actions and rename actions.*/
     "Entities": [
@@ -43,93 +44,19 @@
             }
         },
         {
-            "Name": "MARSxtra.tempload17",
-            "Ignore": false,
-            "Overrides": {
-                "PrimaryKey": [
-                    { "FieldName": "PeriodId" },
-                    { "FieldName": "Loan Number" }
-                ]
-            }
-        },
-        {
-            "Name": "MARSxtra.tempload",
-            "Ignore": false,
-            "Overrides": {
-                "PrimaryKey": [
-                    { "FieldName": "PeriodId" },
-                    { "FieldName": "Inv Year" },
-                    { "FieldName": "Loan Number" }
-                ]
-            }
-        },
-        {
-            "Name": "MARSxtra.vw_REO",
-            "Ignore": false,
-            "Overrides": {
-                "PrimaryKey": [
-                    { "FieldName": "REOID" }
-                ]
-            }
-        },
-        {
-            "Name": "*sysdiagrams",
+            "Name": "SysDiagramIds",
             "Ignore": true
         },
         {
-            "Name": "*SysDiagramIds*",
+            "Name": "UserSysdiagrams",
             "Ignore": true
         },
         {
-            "Name": "*UserSysdiagrams*",
+            "Name": "*Temporal",
             "Ignore": true
         },
         {
-            "Name": "*RelationshipLoad*",
-            "Ignore": true
-        },
-        {
-            "Name": "*RelationshipLoad*",
-            "Ignore": true
-        },
-        {
-            "Name": "*relationships*",
-            "Ignore": true
-        },
-        {
-            "Name": "*TransactionLoad*",
-            "Ignore": true
-        },
-        {
-            "Name": "dbo.REPORT*",
-            "Ignore": true
-        },
-        {
-            "Name": "web.vw*",
-            "Ignore": true
-        },
-        {
-            "Name": "dbo.v*",
-            "Ignore": true
-        },
-        {
-            "Name": "dbo.dt*",
-            "Ignore": true
-        },
-        {
-            "Name": "dbo.V*",
-            "Ignore": true
-        },
-        {
-            "Name": "*relationshipcashflowhistory*",
-            "Ignore": true
-        },
-        {
-            "Name": "*pvchange*",
-            "Ignore": true
-        },
-        {
-            "Name": "*RelationshipCashFlowHistory*",
+            "Name": "*TemporalHistoryFor*",
             "Ignore": true
         },
         { /* This will find everything that matches the following Name pattern and rename its alias to the mask mentioned in AliasRenameTo,  noting that a * will remove to  */
