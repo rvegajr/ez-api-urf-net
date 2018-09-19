@@ -93,6 +93,7 @@
   <ItemGroup>
     <Compile Include="DecimalPrecisionAttribute.cs" />
     <Compile Include="EzEntitiesContextPartial.cs" />
+    <Compile Include="Models\EzEntitiesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -117,7 +118,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="StoredProcedures\Models\" />
   </ItemGroup>
 </Project>
