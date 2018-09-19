@@ -95,7 +95,7 @@ namespace Ez.Web
         /// <summary> </summary>
         public static void RegisterPerRequest(IUnityContainer container)
         {
-            //container.RegisterType<DbContext, EzEntities>(UnityRegistrationLifetimeManagerType.PerRequest.ToUnityLifeTimeManager());
+            container.RegisterType<DbContext, EzEntities>(UnityRegistrationLifetimeManagerType.PerRequest.ToUnityLifeTimeManager());
             //container.RegisterType<IEzStoredProcedures, EzEntities>(UnityRegistrationLifetimeManagerType.PerRequest.ToUnityLifeTimeManager());
         }
 

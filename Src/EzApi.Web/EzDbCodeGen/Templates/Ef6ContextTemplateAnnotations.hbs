@@ -16,12 +16,6 @@ namespace Ez.Entities.Models
     /// <summary></summary>
     public partial class EzEntities : DataContext
     {
-        /// <summary></summary>
-        public EzEntities() : base(AppSettings.Instance.ConnectionString) { }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder) {
-        }
-
 {{#each Entities}}
         /// <summary>From Database table {{@key}}</summary>
         public virtual DbSet<{{ToSingular Alias}}> {{Alias}} { get; set; }{{/each}}
