@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "EzDbCodeGen.Cli/1.1.18.0": {
+      "EzDbCodeGen.Cli/1.1.19.0": {
         "dependencies": {
           "EzDbCodeGen.Core": "1.1.18",
           "McMaster.Extensions.CommandLineUtils": "2.2.5"
@@ -248,7 +248,7 @@
     }
   },
   "libraries": {
-    "EzDbCodeGen.Cli/1.1.18.0": {
+    "EzDbCodeGen.Cli/1.1.19.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

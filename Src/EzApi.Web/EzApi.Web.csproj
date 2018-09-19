@@ -56,8 +56,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="EzDbCodeGen.Core, Version=1.1.18.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\EzDbCodeGen.1.1.18\lib\net461\EzDbCodeGen.Core.dll</HintPath>
+    <Reference Include="EzDbCodeGen.Core, Version=1.1.19.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EzDbCodeGen.1.1.19\lib\net461\EzDbCodeGen.Core.dll</HintPath>
     </Reference>
     <Reference Include="EzDbSchema.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EzDbSchema.1.0.23\lib\net461\EzDbSchema.Core.dll</HintPath>
@@ -451,7 +451,6 @@
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\System.Text.Encoding.CodePages.dll" />
     <Content Include="FodyWeavers.xml" />
     <Content Include="Global.asax" />
-    <Content Include="EzDbCodeGen\ezdbcodegen.config.json" />
     <Content Include="EzDbCodeGen\Templates\ODataRegistrationsTemplate.hbs" />
     <Content Include="EzDbCodeGen\Templates\UnitTestsTemplate.hbs" />
     <Content Include="EzDbCodeGen\Templates\UnityRegistrationsTemplate.hbs" />
@@ -501,6 +500,7 @@
     <Content Include="EzDbCodeGen\Templates\Ef6ModelsTemplateAnnotations.hbs" />
     <Content Include="EzDbCodeGen\Templates\SchemaRenderAsFiles.hbs" />
     <Content Include="EzDbCodeGen\Templates\SchemaRender.hbs" />
+    <Content Include="EzDbCodeGen\ezdbcodegen.config.json" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFilesNoOutput.hbs" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFiles.hbs" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRender.hbs" />
@@ -627,15 +627,15 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\packages\Fody.3.2.3\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.3\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Fody.3.2.3\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.2.3\build\Fody.targets'))" />
     <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets'))" />
+    <Error Condition="!Exists('..\packages\Fody.3.2.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.2.4\build\Fody.targets'))" />
   </Target>
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Import Project="..\packages\Fody.3.2.4\build\Fody.targets" Condition="Exists('..\packages\Fody.3.2.4\build\Fody.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
