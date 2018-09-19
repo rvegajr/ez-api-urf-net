@@ -498,8 +498,6 @@
     </Content>
     <Content Include="EzDbCodeGen\Templates\Ef6ContextTemplateAnnotations.hbs" />
     <Content Include="EzDbCodeGen\Templates\Ef6ModelsTemplateAnnotations.hbs" />
-    <Content Include="EzDbCodeGen\Templates\SchemaRenderAsFiles.hbs" />
-    <Content Include="EzDbCodeGen\Templates\SchemaRender.hbs" />
     <Content Include="EzDbCodeGen\ezdbcodegen.config.json" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFilesNoOutput.hbs" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\Templates\SchemaRenderAsFiles.hbs" />
