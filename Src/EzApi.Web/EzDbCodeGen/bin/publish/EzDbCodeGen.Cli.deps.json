@@ -6,9 +6,9 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "EzDbCodeGen.Cli/1.1.19.0": {
+      "EzDbCodeGen.Cli/1.1.20.0": {
         "dependencies": {
-          "EzDbCodeGen.Core": "1.1.18",
+          "EzDbCodeGen.Core": "1.1.20",
           "McMaster.Extensions.CommandLineUtils": "2.2.5"
         },
         "runtime": {
@@ -233,7 +233,7 @@
           }
         }
       },
-      "EzDbCodeGen.Core/1.1.18": {
+      "EzDbCodeGen.Core/1.1.20": {
         "dependencies": {
           "EzDbSchema": "1.0.23",
           "Handlebars.Net": "1.9.5",
@@ -248,7 +248,7 @@
     }
   },
   "libraries": {
-    "EzDbCodeGen.Cli/1.1.19.0": {
+    "EzDbCodeGen.Cli/1.1.20.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -407,7 +407,7 @@
       "path": "system.text.encoding.codepages/4.5.0",
       "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
     },
-    "EzDbCodeGen.Core/1.1.18": {
+    "EzDbCodeGen.Core/1.1.20": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
