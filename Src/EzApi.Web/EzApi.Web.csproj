@@ -457,7 +457,6 @@
     <Content Include="EzDbCodeGen\Templates\UnityServiceRegistrationsTemplate.hbs" />
     <Content Include="EzDbCodeGen\Templates\URFServiceTemplate.hbs" />
     <Content Include="EzDbCodeGen\Templates\WebApiControllersTemplate.hbs" />
-    <Content Include="EzDbCodeGen\ezdbcodegen.ps1" />
     <Content Include="hostappsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -507,6 +506,7 @@
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\ezdbcodegen.config.json" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.runtimeconfig.json" />
     <Content Include="EzDbCodeGen\bin\Src\EzDbCodeGen.Cli\bin\Release\netcoreapp2.1\publish\EzDbCodeGen.Cli.deps.json" />
+    <Content Include="EzDbCodeGen\ezapicodegen.ps1" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
